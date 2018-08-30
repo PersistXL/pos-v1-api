@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="pos.js"></script>
+    <title>pos机</title>
+</head>
+<style>
+    #bar-code{
+        margin: auto;
+        width: 300px;
+        height: auto;
+        border: solid 1px gainsboro;
+    }
+    .top{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #bot{
+        clear: both;
+        margin-left: 30px;
+        /* margin-top: -50px; */
+    }
+    #list{
+        width: 280px;
+        height: auto;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-top: 35px;
+        list-style-type: none;
+    }
+</style>
+<body>
+    <div id="bar-code">
+        <p class="top">*** <没钱赚商店>收据 ***</p>
+        <div id="list"></div>
+        <p id="bot"></p>
+    </div>
+</body>
+</html>
